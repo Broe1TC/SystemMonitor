@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Advanced System Monitor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <widget class="QWidget" name="tabCPU">
+       <attribute name="title">
+        <string>CPU</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="cpuLayout">
+        <item>
+         <widget class="QProgressBar" name="cpuProgressBar"/>
+        </item>
+        <item>
+         <widget class="QChartView" name="cpuChartView"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabRAM">
+       <attribute name="title">
+        <string>RAM</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="ramLayout">
+        <item>
+         <widget class="QProgressBar" name="ramProgressBar"/>
+        </item>
+        <item>
+         <widget class="QChartView" name="ramChartView"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabDisk">
+       <attribute name="title">
+        <string>Disk</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="diskLayout">
+        <item>
+         <widget class="QChartView" name="diskChartView"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabNetwork">
+       <attribute name="title">
+        <string>Network</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="networkLayout">
+        <item>
+         <widget class="QChartView" name="networkChartView"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
