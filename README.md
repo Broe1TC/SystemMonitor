@@ -42,9 +42,10 @@ The program displays:
 
 ```bash
 
-git clone https://github.com/yourusername/SystemMonitor.git
+git clone https://github.com/Broe1TC/SystemMonitor.git
 
 cd SystemMonitor
+
 
 
 
